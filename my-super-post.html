@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.prod.9e9d5ce754.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
+
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+        <meta name="author" content="luany3i" />
+
+        <meta name="description" content="build a static websites
+" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="pelican, publishing, 网站搭建, " />
+
+<meta property="og:title" content="如何搭建个人网站 "/>
+<meta property="og:url" content="./my-super-post" />
+<meta property="og:description" content="build a static websites" />
+<meta property="og:site_name" content="3i&#39;s blog" />
+<meta property="og:article:author" content="luany3i" />
+<meta property="og:article:published_time" content="2020-08-02T18:47:00+08:00" />
+<meta property="og:article:modified_time" content="2020-08-02T18:53:00+08:00" />
+<meta name="twitter:title" content="如何搭建个人网站 ">
+<meta name="twitter:description" content="build a static websites">
+
+        <title>如何搭建个人网站  · 3i&#39;s blog
+</title>
+        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./theme/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./theme/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./theme/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./theme/images/apple-touch-icon-180x180.png" type="image/png" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="3i&#39;s blog - Full Atom Feed" />
+
+
+
+    </head>
+    <body>
+        <div id="content">
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="./"><span class=site-name>3i's blog</span></a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right top-menu">
+                                <li >
+                                    <a href=
+                                       .
+                                    >Home</a>
+                                </li>
+                                <li ><a href="./categories">Categories</a></li>
+                                <li ><a href="./tags">Tags</a></li>
+                                <li ><a href="./archives">Archives</a></li>
+                                <li><form class="navbar-search" action="./search" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span1"></div>
+                    <div class="span10">
+<article itemscope>
+<div class="row-fluid">
+    <header class="page-header span10 offset2">
+        <h1>
+            <a href="./my-super-post">
+                如何搭建个人网站
+            </a>
+        </h1>
+    </header>
+</div>
+
+<div class="row-fluid">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#_1">工具</a></li>
+<li><a href="#_2">流程</a></li>
+<li><a href="#md">md 格式要求</a></li>
+<li><a href="#_3">问题</a></li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
+            
+            <blockquote>
+<p>References: </p>
+<ul>
+<li><a href="https://docs.getpelican.com/en/latest/index.html">Pelican 4.8.0 (getpelican.com)</a></li>
+<li><a href="https://zodiac911.github.io/blog/static-blog.html">Pelican+GitHubPages搭建个人博客 · Zodiac Wang (zodiac911.github.io)</a></li>
+<li><a href="https://dark.net.cn/posts/2021/10/use-Pelican-Github-build-blog-site.html">MakeLove 程序员赚钱指南 – 使用Pelican+Github搭建个人博客网站 (dark.net.cn)</a></li>
+</ul>
+</blockquote>
+
+<h3 id="_1">工具<a class="headerlink" href="#_1" title="Permanent link"> </a></h3>
+<p>基于 Python 的静态网页生成工具：Pelican</p>
+<p>安装：<code>pip install "pelican[markdown]"</code></p>
+<p>docs：<a href="https://docs.getpelican.com/en/latest/index.html">Pelican 4.8.0 (getpelican.com)</a></p>
+<h3 id="_2">流程<a class="headerlink" href="#_2" title="Permanent link"> </a></h3>
+<p>初始化网站目录</p>
+<div class="highlight"><pre><span></span><code>pelican-quickstart
+</code></pre></div>
+<p>根据 content 目录下内容生成静态网页文件</p>
+<div class="highlight"><pre><span></span><code>pelican content
+</code></pre></div>
+<p>本地预览网页</p>
+<div class="highlight"><pre><span></span><code>pelican --listen
+</code></pre></div>
+<h3 id="md">md 格式要求<a class="headerlink" href="#md" title="Permanent link"> </a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">My</span><span class="w"> </span><span class="kd">super</span><span class="w"> </span><span class="n">title</span><span class="w"></span>
+<span class="n">Date</span><span class="o">:</span><span class="w"> </span><span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span><span class="w"> </span><span class="mi">10</span><span class="o">:</span><span class="mi">20</span><span class="w"></span>
+<span class="n">Modified</span><span class="o">:</span><span class="w"> </span><span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">05</span><span class="w"> </span><span class="mi">19</span><span class="o">:</span><span class="mi">30</span><span class="w"></span>
+<span class="n">Category</span><span class="o">:</span><span class="w"> </span><span class="n">Python</span><span class="w"></span>
+<span class="n">Tags</span><span class="o">:</span><span class="w"> </span><span class="n">pelican</span><span class="o">,</span><span class="w"> </span><span class="n">publishing</span><span class="w"></span>
+<span class="n">Slug</span><span class="o">:</span><span class="w"> </span><span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span><span class="w"></span>
+<span class="n">Authors</span><span class="o">:</span><span class="w"> </span><span class="n">Alexis</span><span class="w"> </span><span class="n">Metaireau</span><span class="o">,</span><span class="w"> </span><span class="n">Conan</span><span class="w"> </span><span class="n">Doyle</span><span class="w"></span>
+<span class="n">Summary</span><span class="o">:</span><span class="w"> </span><span class="n">Short</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">feeds</span><span class="w"></span>
+
+<span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="kd">super</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="n">post</span><span class="o">.</span><span class="w"></span>
+</code></pre></div>
+<h3 id="_3">问题<a class="headerlink" href="#_3" title="Permanent link"> </a></h3>
+<div class="highlight"><pre><span></span><code><span class="nv">WARNING</span>  <span class="nv">Docutils</span> <span class="nv">has</span> <span class="nv">no</span> <span class="nv">localization</span> <span class="k">for</span> <span class="s1">'</span><span class="s">zh</span><span class="s1">'</span>. <span class="nv">Using</span> <span class="s1">'</span><span class="s">en</span><span class="s1">'</span> <span class="nv">instead</span>.                                
+<span class="nv">WARNING</span>  <span class="nv">Watched</span> <span class="nv">path</span> <span class="nv">does</span> <span class="nv">not</span> <span class="nv">exist</span>: <span class="nv">C</span>:\<span class="nv">Users</span>\<span class="nv">i</span>\<span class="nv">i_documents</span>\<span class="nv">site</span>\<span class="nv">content</span>\<span class="nv">images</span>
+</code></pre></div>
+<ul>
+<li>修改 <code>pelicanconf.py</code> 中的 <code>DEFAULT_LANG</code></li>
+</ul>
+
+
+             
+ 
+            
+            
+            
+
+
+
+
+
+
+
+            <hr/>
+        </div>
+        <section id="article-sidebar" class="span2">
+            <h4>Published</h4>
+            <time itemprop="dateCreated" datetime="2020-08-02T18:47:00+08:00">2020.08.02 (周日)</time>
+
+            <h4>Category</h4>
+            <a class="category-link" href="./categories#wang-zhan-da-jian-ref">网站搭建</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="./tags#pelican-ref">pelican
+                    <span class="superscript">1</span>
+</a></li>
+                <li><a href="./tags#publishing-ref">publishing
+                    <span class="superscript">1</span>
+</a></li>
+            </ul>
+<h4>Contact</h4>
+<div id="sidebar-social-link">
+    <a href="https://github.com/Pelican-Elegant/" title="Elegant Github Repository" target="_blank" rel="nofollow noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="GitHub" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a>
+</div>
+            
+
+
+
+
+
+            
+
+
+
+        </section>
+</div>
+</article>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>                    </div>
+                    <div class="span1"></div>
+                </div>
+            </div>
+        </div>
+<footer>
+    <div>
+        Content licensed under <a rel="license nofollow noopener noreferrer"
+    href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+    Creative Commons Attribution 4.0 International License</a>.
+    </div>
+
+    <div>
+        <span class="site-name">3i's blog</span> - hello this is subtitle
+    </div>
+
+
+
+    <div id="fpowered">
+        Powered by: <a href="http://getpelican.com/" title="Pelican Home Page" target="_blank" rel="nofollow noopener noreferrer">Pelican</a>
+        Theme: <a href="https://elegant.oncrashreboot.com/" title="Theme Elegant Home Page" target="_blank" rel="nofollow noopener noreferrer">Elegant</a>
+    </div>
+</footer>            <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="./theme/js/elegant.prod.9e9d5ce754.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+
+    <script>
+    (function () {
+        if (window.location.hash.match(/^#comment-\d+$/)) {
+            $('#comment_thread').collapse('show');
+        }
+    })();
+    window.onhashchange=function(){
+        if (window.location.hash.match(/^#comment-\d+$/))
+            window.location.reload(true);
+    }
+    $('#comment_thread').on('shown', function () {
+        var link = document.getElementById('comment-accordion-toggle');
+        var old_innerHTML = link.innerHTML;
+        $(link).fadeOut(200, function() {
+            $(this).text('Click here to hide comments').fadeIn(200);
+        });
+        $('#comment_thread').on('hidden', function () {
+            $(link).fadeOut(200, function() {
+                $(this).text(old_innerHTML).fadeIn(200);
+            });
+        })
+    })
+</script>
+
+    </body>
+    <!-- Theme: Elegant built for Pelican
+        License : MIT -->
+</html>
