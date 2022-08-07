@@ -153,13 +153,13 @@ div.tip p.admonition-title:before {
 
 .article-content blockquote {
     --quotes-margin: 13px;
-    background: #fff8dc;
-    border-left: 5px solid #daa520;
+    background: rgb(243 244 246);
+    border-left: 8px solid #e5e7eb;
     border-radius: var(--border-radius);
     box-sizing: border-box;
     /* 居中 */
     margin: 1rem auto 2rem;
-    padding: .1rem 1.2rem;
+    padding: 1rem 1.2rem;
     position: relative;
     /*无缩进*/
     width: 100%;
@@ -191,9 +191,10 @@ div.tip p.admonition-title:before {
     top: auto
 } */
 
-.article-content blockquote p {
+/* 引用中的语句的额外 margin */
+/* .article-content blockquote p {
     margin: 20px 0
-}
+} */
 
 /*!
  * Bootstrap v2.3.2
@@ -7512,12 +7513,13 @@ a.category-link:hover {
     text-decoration: none
 }
 
+/* 类别选中效果 */
 a.category-title-inside-accordion:hover,
 a:not(.collapsed).accordion-toggle.category-title-inside-accordion {
-    background-color: #08c;
+    /* background-color: #08c; */
     border-radius: 4px;
     border-radius: var(--borderRadius);
-    color: #fff
+    /* color: #fff */
 }
 
 div.blog-archives h2 {
@@ -8013,92 +8015,21 @@ section#article-sidebar {
     font-size: .9em
 }
 
-@font-face {
-    font-family: "PT Serif";
-    font-style: italic;
-    font-weight: 400;
-    src: local("PT Serif Italic"), local(PTSerif-Italic), url(//fonts.gstatic.com/s/ptserif/v12/EJRTQgYoZZY2vCFuvAFT_rO1dg.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v12/EJRTQgYoZZY2vCFuvAFT_r21cg.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v12/EJRTQgYoZZY2vCFuvAFT_rO1dA.woff) format("woff")
-}
-
-@font-face {
-    font-family: "PT Serif";
-    font-style: italic;
-    font-weight: 700;
-    src: local("PT Serif Bold Italic"), local(PTSerif-BoldItalic), url(//fonts.gstatic.com/s/ptserif/v12/EJRQQgYoZZY2vCFuvAFT9gaQZyffpA.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v12/EJRQQgYoZZY2vCFuvAFT9gaQZynfoA.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v12/EJRQQgYoZZY2vCFuvAFT9gaQZyffpg.woff) format("woff")
-}
-
-@font-face {
-    font-family: "PT Serif";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Serif"), local(PTSerif-Regular), url(//fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvAFYzrs.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvAFWzr8.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvAFYzrk.woff) format("woff")
-}
-
-@font-face {
-    font-family: "PT Serif";
-    font-style: normal;
-    font-weight: 700;
-    src: local("PT Serif Bold"), local(PTSerif-Bold), url(//fonts.gstatic.com/s/ptserif/v12/EJRSQgYoZZY2vCFuvAnt66qcVy8.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v12/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v12/EJRSQgYoZZY2vCFuvAnt66qcVy0.woff) format("woff")
-}
-
-@font-face {
-    font-family: PT Mono;
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Mono"), local(PTMono-Regular), url(//fonts.gstatic.com/s/ptmono/v8/9oRONYoBnWILk-9AnCEzNw.eot#) format("eot"), url(//fonts.gstatic.com/s/ptmono/v8/9oRONYoBnWILk-9AnC8zMw.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptmono/v8/9oRONYoBnWILk-9AnCEzNQ.woff) format("woff")
-}
-
-@font-face {
-    font-family: "PT Serif Caption";
-    font-style: italic;
-    font-weight: 400;
-    src: local("PT Serif Caption Italic"), local(PTSerif-CaptionItalic), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVj2ZhbGCW-JoW6S34pSDpqYKU019eLAQM5.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVj2ZhbGCW-JoW6S34pSDpqYKU019eLDwM9.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVj2ZhbGCW-JoW6S34pSDpqYKU019eLAQM7.woff) format("woff")
-}
-
-@font-face {
-    font-family: "PT Serif Caption";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Serif Caption"), local(PTSerif-Caption), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVl2ZhbGCW-JoW6S34pSDpqYKU019y7CQ.eot#) format("eot"), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVl2ZhbGCW-JoW6S34pSDpqYKU019K7DQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserifcaption/v12/ieVl2ZhbGCW-JoW6S34pSDpqYKU019y7Cw.woff) format("woff")
-}
-
-@font-face {
-    font-family: PT Sans;
-    font-style: italic;
-    font-weight: 400;
-    src: local("PT Sans Italic"), local(PTSans-Italic), url(//fonts.gstatic.com/s/ptsans/v12/jizYRExUiTo99u79D0e0ycmM.eot#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v12/jizYRExUiTo99u79D0e0x8mI.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v12/jizYRExUiTo99u79D0e0ycmO.woff) format("woff")
-}
-
-@font-face {
-    font-family: PT Sans;
-    font-style: italic;
-    font-weight: 700;
-    src: local("PT Sans Bold Italic"), local(PTSans-BoldItalic), url(//fonts.gstatic.com/s/ptsans/v12/jizdRExUiTo99u79D0e8fOydIRUZ.eot#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v12/jizdRExUiTo99u79D0e8fOydLxUd.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v12/jizdRExUiTo99u79D0e8fOydIRUb.woff) format("woff")
-}
-
-@font-face {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Sans"), local(PTSans-Regular), url(//fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0yEwQ.eot#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KExQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0yEww.woff) format("woff")
-}
-
-@font-face {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 700;
-    src: local("PT Sans Bold"), local(PTSans-Bold), url(//fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OCtKQ.eot#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OCtKw.woff) format("woff")
-}
 
 :root {
     --headingBorderBottomWidth: 1px;
     --headingBorderBottomStyle: solid;
     --headingOthersLineHeight: 1.3rem;
     --headingOthersH4FontSize: 1.1rem;
-    --sansFontFamily: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --monoFontFamily: "PT Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
-    --serifFontFamily: "PT Serif", Georgia, "Times New Roman", Times, serif;
-    --serifHeadingFontFamily: "PT Serif Caption", Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif
+
+    /* 不使用有衬线字体*/
+    --sansFontFamily: ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --monoFontFamily: Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Liberation Mono, Courier New, monospace;
+    /* --serifFontFamily: "PT Serif", Georgia, "Times New Roman", Times, serif; */
+    /* --serifHeadingFontFamily: "PT Serif Caption", Baskerville, Garamond, Georgia, "DejaVu Serif", "Times New Roman", Times, serif */
 }
 
 body {
@@ -8114,7 +8045,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    font-weight: 600;
     text-align: left
 }
 
@@ -8320,9 +8251,9 @@ pre {
 div.recent-posts p {
     font-family: "PT Serif", Georgia, Times New Roman, Times, serif;
     font-family: var(--serifFontFamily);
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25;
     text-transform: none
 }
 

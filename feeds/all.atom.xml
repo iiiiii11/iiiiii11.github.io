@@ -40,4 +40,16 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;修改 &lt;code&gt;pelicanconf.py&lt;/code&gt; 中的 &lt;code&gt;DEFAULT_LANG&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="网站搭建"></category><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;/ul&gt;
+&lt;h1 id="1"&gt;测试1&lt;a class="headerlink" href="#1" title="Permanent link"&gt; &lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;这是正文&lt;/p&gt;
+&lt;h2 id="2"&gt;测试2&lt;a class="headerlink" href="#2" title="Permanent link"&gt; &lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;这是正文&lt;/p&gt;
+&lt;h3 id="3"&gt;测试3&lt;a class="headerlink" href="#3" title="Permanent link"&gt; &lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;这是正文&lt;/p&gt;
+&lt;h4 id="4"&gt;测试4&lt;a class="headerlink" href="#4" title="Permanent link"&gt; &lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;这是正文&lt;/p&gt;
+&lt;h5 id="5"&gt;测试5&lt;a class="headerlink" href="#5" title="Permanent link"&gt; &lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;这是正文&lt;/p&gt;
+&lt;h6 id="6"&gt;测试6&lt;a class="headerlink" href="#6" title="Permanent link"&gt; &lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;这是正文&lt;/p&gt;</content><category term="网站搭建"></category><category term="pelican"></category><category term="publishing"></category></entry></feed>
