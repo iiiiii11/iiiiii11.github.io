@@ -158,7 +158,7 @@ div.tip p.admonition-title:before {
     border-radius: var(--border-radius);
     box-sizing: border-box;
     /* 居中 */
-    margin: 1rem auto 2rem;
+    margin: 1rem auto;
     padding: 1rem 1.2rem;
     position: relative;
     /*无缩进*/
@@ -439,8 +439,8 @@ a {
 
 a:focus,
 a:hover {
-    color: #005580;
-    text-decoration: underline
+    color: #0f3549;
+    text-decoration: none
 }
 
 .img-rounded {
@@ -1041,7 +1041,8 @@ code {
     border: 1px solid #e1e1e8;
     /* color: #d14; */
     padding: 2px 4px;
-    white-space: nowrap
+    /* 启用换行 */
+    /* white-space: nowrap */
 }
 
 pre {
@@ -7125,7 +7126,7 @@ figure.code>div.highlight:not(:first-child)>div.codecopy>button.codecopy-btn {
 
 div.highlight {
     border-radius: var(--borderRadius);
-    margin-bottom: 20px
+    /* margin-bottom: 20px */
 }
 
 td.code div.highlight {
@@ -7304,9 +7305,6 @@ footer {
     font-family: Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif
 }
 
-a {
-    color: #3875d7
-}
 
 hr {
     border-width: 3px
@@ -7364,17 +7362,18 @@ ul.list-projects {
     line-height: 28px
 }
 
-.article-content,
+/* 禁用字符两端对齐 */
+/* .article-content,
 div.recent-posts p {
     text-align: justify
-}
+} */
 
 .article-content {
     max-width: 50em
 }
 
 .article-content p {
-    margin: 0 0 20px
+    margin: 10px 0;
 }
 
 .article-content ul:not(.related-posts-list):not(.articles-timeline) {
@@ -7421,7 +7420,7 @@ h4,
 h5,
 h6 {
     font-weight: 400;
-    margin: 10px 0
+    margin: 20px 0 10px
 }
 
 /* 标题样式 */
@@ -7489,7 +7488,10 @@ ul.multi-parts-list li.active-part {
 
 .article-content img {
     border: 2px solid #eee;
-    padding: 5px
+    padding: 5px;
+    /*居中*/
+    display: block;
+    margin: 0 auto;
 }
 
 p#post-share-links {
@@ -7535,12 +7537,27 @@ div.blog-archives h2 {
 }
 
 div.blog-archives div,
-div.recent-posts-article,
 ul.list-projects li {
     border-bottom: 1px dotted #696969;
     border-bottom: 1px dotted var(--mutedTextColor);
     overflow: auto;
-    padding: .3rem .2rem
+    padding: 1rem .2rem .3rem
+}
+
+/* 首页recent posts每项样式 */
+div.recent-posts-article {
+    overflow: auto;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    margin: .5rem 0;
+}
+
+/* 首页recent posts每项中日期样式 */
+div.recent-posts-article .recent-posts-posted {
+    color: rgb(156 163 175);
+    padding-top: .5rem;
 }
 
 ul.list-articles-under-tag-category li {
@@ -7673,6 +7690,7 @@ ul.list-articles-under-tag-category li time {
     display: inline
 }
 
+/* 首页：全部post按钮 */
 #allposts {
     color: #696969;
     color: var(--mutedTextColor);
@@ -7683,6 +7701,15 @@ ul.list-articles-under-tag-category li time {
 
 a#allposts:hover {
     color: #333
+}
+
+/* 首页：全部post按钮（放在页面末尾） */
+#allposts_foot {
+    color: #08c;
+}
+
+a#allposts_foot:hover {
+    color: #0f3549;
 }
 
 .literal {
@@ -8084,7 +8111,7 @@ h1 {
 
 @media (min-width:1200px) {
     h1 {
-        font-size: 2.4rem
+        font-size: 2rem
     }
 }
 
@@ -8094,7 +8121,7 @@ h2 {
 
 @media (min-width:1200px) {
     h2 {
-        font-size: 2.2rem
+        font-size: 1.8rem
     }
 }
 
@@ -8104,7 +8131,7 @@ h3 {
 
 @media (min-width:1200px) {
     h3 {
-        font-size: 2rem
+        font-size: 1.6rem
     }
 }
 
@@ -8114,7 +8141,7 @@ h4 {
 
 @media (min-width:1200px) {
     h4 {
-        font-size: 1.8rem
+        font-size: 1.4rem
     }
 }
 
@@ -8124,7 +8151,7 @@ h5 {
 
 @media (min-width:1200px) {
     h5 {
-        font-size: 1.6rem
+        font-size: 1.3rem
     }
 }
 
@@ -8134,7 +8161,7 @@ h6 {
 
 @media (min-width:1200px) {
     h6 {
-        font-size: 1.4rem
+        font-size: 1.2rem
     }
 }
 
@@ -8253,7 +8280,8 @@ div.recent-posts p {
     font-family: var(--serifFontFamily);
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1.25;
+    /*行高太小会导致行内代码框显示出错*/
+    line-height: 1.5;
     text-transform: none
 }
 
