@@ -1,0 +1,26 @@
+div#sidebar-social-link a svg {
+    -webkit-filter: saturate(0) brightness(.7);
+    filter: saturate(0) brightness(.7);
+    height: 20px;
+    margin-right: 3px;
+    position: relative;
+    transition: all .2s ease-in-out;
+    width: 20px;
+    z-index: 0
+}
+
+div#sidebar-social-link a {
+    text-decoration: none
+}
+
+div#sidebar-social-link a svg:hover {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(2.5);
+    z-index: 1
+}
+
+section#article-sidebar {
+    float: right;
+    font-size: .9em
+}

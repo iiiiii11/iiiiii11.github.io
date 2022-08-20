@@ -971,3 +971,116 @@ div.applause_button applause-button div.style-root {
     stroke: maroon !important;
     color: maroon !important
 }
+
+div.elegant-gallery {
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-size: 0;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+}
+
+div.elegant-gallery figure {
+    border: 1px solid #d3d3d3;
+    margin: 0;
+    max-width: 100%;
+    padding: 0
+}
+
+div.elegant-gallery figure figcaption {
+    display: none
+}
+
+div.elegant-gallery figure img {
+    border: none;
+    margin: 0;
+    max-width: 100%;
+    padding: 0
+}
+
+
+/* MailChimp */
+#mc-embed-signup {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 10px 0
+}
+
+#mc-embed-signup form {
+    display: block;
+    padding: 0;
+    position: relative;
+    text-align: left
+}
+
+#mc-embed-signup input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #999
+}
+
+#mc-embed-signup input:focus {
+    border-color: #333
+}
+
+#mc-embed-signup input.email {
+    display: block;
+    font-size: .9em;
+    margin: 0 4% 10px 0;
+    min-width: 130px;
+    padding: 8px 0;
+    text-indent: 5px;
+    width: 100%
+}
+
+#mc-embed-signup input.button {
+    display: block;
+    margin: 0 0 10px;
+    min-width: 130px;
+    width: 100%
+}
+
+#mc-embed-signup input[type=email] {
+    height: 100%
+}
+
+#mc-embed-signup .button {
+    background-color: #eee;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    border-radius: var(--borderRadius);
+    clear: both;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto
+}
+
+#mc-embed-signup.button:hover {
+    background-color: #dfdfdf
+}
+
+#mc-embed-signup .clear {
+    clear: none;
+    display: inline
+}

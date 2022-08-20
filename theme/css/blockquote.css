@@ -1,0 +1,45 @@
+.article-content blockquote {
+    --quotes-margin: 13px;
+    background: rgb(243 244 246);
+    border-left: 8px solid #e5e7eb;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    /* 居中 */
+    margin: 1rem auto;
+    padding: 1rem 1.2rem;
+    position: relative;
+    font-weight: 300;
+    /*无缩进*/
+    width: 100%;
+}
+
+.article-content blockquote:after,
+.article-content blockquote:before {
+    color: #696969;
+    font-size: 4rem;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute
+}
+
+/* 显示引号 */
+/* .article-content blockquote:before {
+    content: open-quote;
+    margin-right: var(--quotes-margin);
+    right: 100%;
+    top: 30px
+}
+
+.article-content blockquote:after {
+    bottom: 0;
+    content: close-quote;
+    left: 100%;
+    margin-left: var(--quotes-margin);
+    top: auto
+} */
+
+/* 引用中的语句的额外 margin */
+/* .article-content blockquote p {
+    margin: 20px 0
+} */

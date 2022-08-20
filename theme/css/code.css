@@ -1,0 +1,155 @@
+.highlight span.hll span {
+    background-color: #000;
+    display: inline-block;
+    width: 100%
+}
+
+div.highlight {
+    border-radius: var(--borderRadius);
+    /* margin-bottom: 20px */
+}
+
+td.code div.highlight {
+    border-radius: 0 var(--borderRadius) var(--borderRadius) 0
+}
+
+pre {
+    word-wrap: normal;
+    color: #ebdbb2;
+    overflow: auto;
+    white-space: pre;
+    word-break: normal
+}
+
+figure.code {
+    margin: 0;
+    padding: 0
+}
+
+figure.code figcaption {
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #544c50;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+    color: #ebdbb2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: var(--sansFontFamily);
+    font-size: 1.1rem;
+    justify-content: space-between;
+    padding: 1px 9.5px
+}
+
+figure.code figcaption span.liquid-tags-code-title {
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+figure.code figcaption span.liquid-tags-code-filename {
+    color: #fe8019;
+    font-family: var(--monoFontFamily)
+}
+
+figure.code figcaption a {
+    color: #b8bb26;
+    margin-left: 30px;
+    position: relative;
+    text-transform: capitalize
+}
+
+figure.code figcaption a:before {
+    content: url("data:image/svg+xml;charset=utf-8,%3Csvg image-rendering='optimizeQuality' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' viewBox='0 0 294 452.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b8bb26'%3E%3Cpath d='M126 0h42v185h62l-83 111-83-111h62z'/%3E%3Cpath d='M294 257v105H0V257h34v71h226v-71z'/%3E%3C/g%3E%3C/svg%3E");
+    height: .9rem;
+    margin: 0;
+    padding: 0 4px 0 0;
+    position: absolute;
+    right: 100%;
+    top: .35rem;
+    width: .9rem
+}
+
+figure.code div.highlight:not(:first-child) {
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius)
+}
+
+table {
+    table-layout: fixed;
+    width: 100%
+}
+
+td {
+    vertical-align: top
+}
+
+@media (max-width:979px) {
+    .linenos {
+        display: none !important
+    }
+}
+
+.linenos {
+    width: 30px
+}
+
+.linenos div pre {
+    overflow: hidden;
+    text-align: right
+}
+
+td.code {
+    width: 100%
+}
+
+.linenodiv pre {
+    background-color: #282828;
+    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+    color: #ebdbb2
+}
+
+table.highlighttable,
+table.highlighttable td {
+    border: none
+}
+
+table.highlighttable tbody>tr:nth-child(odd)>td {
+    background-color: transparent
+}
+
+
+/* code copy */
+.codecopy {
+    overflow: visible;
+    position: relative
+}
+
+.codecopy button.codecopy-btn {
+    background-color: #fe8019;
+    border: none;
+    border-bottom-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+    box-shadow: none;
+    font-size: .9rem;
+    min-height: 0;
+    min-height: auto;
+    padding: .2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    /* 隐藏copy按钮 */
+    visibility: hidden;
+}
+
+.codecopy button.codecopy-btn:focus,
+.codecopy button.codecopy-btn:hover {
+    box-shadow: none
+}
+
+figure.code>div.highlight:not(:first-child)>div.codecopy>button.codecopy-btn {
+    border-top-right-radius: 0
+}
